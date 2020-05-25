@@ -1,0 +1,7 @@
+.whole-grid {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  position: relative;
+  width: 18rem;
+}

@@ -9,15 +9,11 @@ import { SingleSquare } from '../single-square';
 export class SquareComponent implements OnInit {
   // Single square in the 3x3 grid
   arrOfValues: string[] = ['', 'x', 'o'];
-  square: SingleSquare;
+  @Input() square: SingleSquare;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.square = {
-      index: 0,
-      content: ''
-    };
   }
 
   cycleContent(): void {

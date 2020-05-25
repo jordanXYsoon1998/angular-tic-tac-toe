@@ -1,6 +1,7 @@
 .square {
   display: flex;
   float: left;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 5rem;

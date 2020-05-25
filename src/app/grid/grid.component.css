@@ -9,3 +9,9 @@
 button {
   position: relative;
 }
+
+.winner {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+}

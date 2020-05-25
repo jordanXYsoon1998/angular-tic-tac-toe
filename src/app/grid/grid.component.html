@@ -1,6 +1,7 @@
 <h2>Tic Tac Toe Grid</h2>
 <div class="whole-grid">
-  <app-square *ngFor="let square of squares" [square]="square"></app-square>
+  <app-square *ngFor="let square of squares" [square]="square" (clicked)="checkWinner()"></app-square>
 </div>
 
 <button (click)="restart()">Restart Game</button>
+<div class="winner" *ngIf="winner">{{winner | uppercase}} has won!</div>
